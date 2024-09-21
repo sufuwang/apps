@@ -90,11 +90,6 @@ export default function ScrollTable({
 		);
 	};
 
-	// console.info(
-	// 	"table.getRowModel().rows: ",
-	// 	table.getRowModel().rows.forEach((row) => console.info(row))
-	// );
-
 	return (
 		<ScrollArea className={`h-full ${scrollAreaClassName}`}>
 			<RcTable {...props} className="overflow-auto relative">
@@ -109,7 +104,7 @@ export default function ScrollTable({
 											: flexRender(
 													header.column.columnDef.header,
 													header.getContext()
-											  )}
+												)}
 									</TableHead>
 								);
 							})}

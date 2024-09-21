@@ -9,7 +9,8 @@ services:
   #   ports:
   #     - '3000:3000'
 
-  mysql-container:
+  mysql:
+    container_name: mysql
     image: mysql
     ports:
       - '3306:3306'

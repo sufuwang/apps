@@ -46,7 +46,6 @@ export default function AddDialog({ tip, columns, action, query }: Props) {
 		query(dateValue.format("YYYY-MM")).then((rowStr) => {
 			try {
 				const row = JSON.parse(rowStr);
-				console.info("row: ", row);
 				columns.forEach((key) => {
 					form.setValue(key, row[key] ?? 0);
 				});
@@ -80,7 +79,6 @@ export default function AddDialog({ tip, columns, action, query }: Props) {
 						className="space-y-8"
 						onSubmit={form.handleSubmit(async (d) => {
 							const { Date } = d as unknown as WithUpperDate;
-							console.info("ddd: ", d);
 							if (!Date) {
 								message.error("Please select a date");
 								return;
@@ -126,7 +124,6 @@ export default function AddDialog({ tip, columns, action, query }: Props) {
 								name="Description"
 								control={form.control}
 								render={({ field }) => {
-									console.info("field: ", field);
 									return (
 										<FormItem className="col-span-3">
 											<FormLabel>Description</FormLabel>
