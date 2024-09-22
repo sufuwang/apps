@@ -1,0 +1,22 @@
+{
+  "name": "@repo/tools",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "exports": {
+    "./email": {
+      "types": "./src/email.ts",
+      "default": "./dist/email.js"
+    },
+    "./folder": {
+      "types": "./src/folder.ts",
+      "default": "./dist/folder.js"
+    }
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "dayjs": "^1.11.10",
+    "nodemailer": "^6.9.15"
+  }
+}

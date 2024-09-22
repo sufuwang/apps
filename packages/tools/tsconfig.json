@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "lib": ["ESNext", "DOM"],
+    "baseUrl": "./",
+    "target": "es2017",
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    // "declaration": true,
+    // "removeComments": true,
+    // "sourceMap": true,
+    // "incremental": true,
+    // "skipLibCheck": true,
+    // "strictNullChecks": false,
+    // "noImplicitAny": false,
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"],
+}

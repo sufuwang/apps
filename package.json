@@ -9,7 +9,8 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "ri": "find . -name \"node_modules\" -type d -exec rm -rf {} + && pnpm i"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
