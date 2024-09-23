@@ -29,12 +29,12 @@ export function compressFolder({
 				"Compressed Folder: ",
 				`${path}/${willCompressFolderName} => ${path}/${compressedFileName}`
 			);
-			archive.finalize();
 			resolve(null);
 		});
 		archive.on("error", reject);
 		archive.pipe(output);
 		archive.directory(Path.join(path, willCompressFolderName), false);
+		archive.finalize();
 	});
 }
 
