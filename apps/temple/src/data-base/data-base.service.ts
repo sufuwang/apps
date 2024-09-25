@@ -2,9 +2,11 @@ import { Inject, Injectable } from '@nestjs/common';
 import TaskEntity from './entities/task.entity';
 import TaskDto from './dto/task.dto';
 import { EntityManager } from 'typeorm';
+import ExpenditureEntity from './entities/readMe/expenditure.entity';
 
-const DataBaseReflect: Record<DataBaseName, typeof TaskEntity> = {
+const DataBaseReflect: Record<DataBaseName, any> = {
   task: TaskEntity,
+  expenditure: ExpenditureEntity,
 };
 
 @Injectable()

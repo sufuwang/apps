@@ -3,4 +3,4 @@ declare namespace Task {
   type Detail = 'BackUp ReadMe DataBase';
 }
 
-declare type DataBaseName = 'task';
+declare type DataBaseName = 'task' | 'expenditure';
